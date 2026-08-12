@@ -27,6 +27,7 @@ $endif$
 ]{geometry}
 
 \usepackage{graphicx}
+\usepackage{eso-pic}
 \usepackage{microtype}
 \usepackage{setspace}
 \usepackage{parskip}
@@ -95,9 +96,12 @@ $endif$
 \begin{document}
 
 \thispagestyle{empty}
-\newgeometry{margin=0pt}
-\noindent\includegraphics[width=\paperwidth,height=\paperheight]{omslag/omslag.png}
-\restoregeometry
+\AddToShipoutPictureBG*{%
+  \AtPageLowerLeft{%
+    \includegraphics[width=\paperwidth,height=\paperheight]{omslag/omslag.png}%
+  }%
+}
+\null
 \clearpage
 
 \thispagestyle{empty}
@@ -113,10 +117,11 @@ $endif$
 \end{center}
 \clearpage
 
-\frontmatter
+\pagenumbering{roman}
+\setcounter{page}{1}
 \tableofcontents
 \clearpage
-\mainmatter
+\pagenumbering{arabic}
 \setcounter{page}{1}
 
 $body$

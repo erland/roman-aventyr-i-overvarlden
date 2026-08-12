@@ -14,3 +14,7 @@ Markdown-filerna i `kapitel/` är kanonisk manusKälla. `kapitelnoteringar.md` e
 - EPUB har omslag, separat titelsida, ingen synlig TOC-sida och navigeringsindex med `1. Rubrik`.
 - Kapitelnummer och kapitelrubrik renderas på två centrerade rader.
 - PDF använder bokformat 140 × 216 mm, helsidesomslag, separat titelsida och klickbar innehållsförteckning.
+
+## PDF sidbrytningar
+- Helsidesomslaget läggs nu med `eso-pic`, inte `newgeometry`, vilket tar bort tom sida före omslaget.
+- `frontmatter/mainmatter` används inte runt innehållsförteckningen; explicit sidnumrering används för att undvika extra tomsidor.
