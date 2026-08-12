@@ -60,3 +60,10 @@ Projektet är färdigt manusutkast med epilog och synkade statusfiler.
 
 ## Manusputs
 Kapitelnoteringar har flyttats från kapitelfilerna till `kapitelnoteringar.md`.
+
+## GitHub Actions
+- GitHub Actions-publicering införd.
+- Automatisk validering: `.github/workflows/01-validate.yml`
+- Manuell preview-byggning: `.github/workflows/02-build-preview.yml`
+- Release på `v*`-taggar: `.github/workflows/03-release.yml`
+- Reproducerbar EPUB/PDF-byggning via `scripts/build_book.py`.

@@ -20,3 +20,16 @@ Detta är projektarkivet för romanen **Äventyret i Övervärlden: Hemligheten 
 - Rekommenderad längd per kapitel: cirka 700–1200 ord
 - Perspektiv: Tredje person nära Leo
 - Omslagsbild: Planerad
+
+## GitHub Actions och publicering
+
+Repositoryts `.github/`-katalog ligger i projektroten, på samma nivå som denna `README.md`.
+
+- `Validate`: automatisk kontroll vid PR/push till `main`.
+- `Build Preview`: manuell EPUB/PDF-byggning som ett gemensamt Actions-artifact.
+- `Release`: bygg och publicering av separata EPUB/PDF-assets på `v*`-taggar.
+- Lokal validering: `python3 scripts/validate_project.py .`
+- Lokalt bygge: `python3 scripts/build_book.py --output-dir dist`
+- Pandoc-version: `3.1.11.1`.
+
+Se `publishing/build-notes.md` för layout- och byggdetaljer.
