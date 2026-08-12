@@ -62,3 +62,11 @@
 - Senaste revision: E (epilog integrerad i samtliga kärnfiler)
 
 - Kapitelnoteringar: Flyttade till `kapitelnoteringar.md` så kapitelfilerna är rena inför export.
+
+## Publiceringsautomation
+- `.github/workflows/01-validate.yml`: OK
+- `.github/workflows/02-build-preview.yml`: OK
+- `.github/workflows/03-release.yml`: OK
+- `scripts/validate_project.py`: OK
+- `scripts/build_book.py`: OK
+- `publishing/`: OK

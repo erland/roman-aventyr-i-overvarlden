@@ -29,3 +29,4 @@
 
 | 2026-06-06 | Slutputs F genomförd | Epilogen förlängdes till ca 500 ord och återkommande formuleringar putsades i kapitel 1, 3, 6, 9, 10, 11 och 12. |
 | 2026-06-06 | Manusputs | Kapitelnoteringar flyttade från kapitelfiler till separat `kapitelnoteringar.md` inför export |
+| 2026-08-12 | Publiceringsautomation | GitHub Actions för validering, preview och release samt reproducerbar EPUB/PDF-byggning införd. |
